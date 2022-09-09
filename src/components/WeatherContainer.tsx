@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Location } from "./Location";
+import { Table } from "./Table";
+import { Temperature } from "./Temperature";
 
 export const WeatherContainer = ({
   fetchedData,
@@ -49,36 +52,9 @@ export const WeatherContainer = ({
           alt=""
         />
         <div className="p-6 flex flex-col justify-start">
-          <h5 className="text-gray-900 text-xl font-medium mb-2">
-            Localization
-          </h5>
-          <p className="text-gray-700 text-base mb-4">Temperature</p>
-          <table className="table-auto">
-            <thead>
-              <tr>
-                <th>Song</th>
-                <th>Artist</th>
-                <th>Year</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                <td>Malcolm Lockyer</td>
-                <td>1961</td>
-              </tr>
-              <tr>
-                <td>Witchy Woman</td>
-                <td>The Eagles</td>
-                <td>1972</td>
-              </tr>
-              <tr>
-                <td>Shining Star</td>
-                <td>Earth, Wind, and Fire</td>
-                <td>1975</td>
-              </tr>
-            </tbody>
-          </table>{" "}
+          <Location />
+          <Table />
+          <Temperature />
         </div>
       </div>
     </div>
