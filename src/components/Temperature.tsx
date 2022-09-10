@@ -16,7 +16,7 @@ export const Temperature = ({
         </div>
       </section>
       <section>
-        <p id="idDescription" className="text-gray-700 text-base mb-4">
+        <p id="idDescription" className="text-stone-300 text-base mb-4">
           {description}
         </p>
       </section>

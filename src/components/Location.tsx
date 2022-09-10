@@ -7,10 +7,10 @@ export const Location = ({
   return (
     <>
       <div className="flex flex-row justify-between ">
-        <h3 className="font-medium leading-tight text-3xl mt-0 mb-2 text-yello-700">
+        <h3 className="font-medium leading-tight text-3xl mt-0 mb-2 text-stone-400">
           {city}
         </h3>
-        <p className="text-gray-600 text-xs">{country} </p>
+        <p className="text-stone-300 text-xs">{country} </p>
       </div>
     </>
   );

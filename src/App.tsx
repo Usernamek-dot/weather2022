@@ -20,7 +20,7 @@ export const App = () => {
 
   return (
     <>
-      <h1 className="text-center font-medium leading-tight text-5xl mt-0 mb-5 text-stone-700">
+      <h1 className="text-center font-medium leading-tight text-5xl mt-0 mb-5 text-stone-600">
         Weather App 💛
       </h1>
       <WeatherContainer fetchedData={fetchedData} error={error} />

@@ -19,117 +19,117 @@ export const Table = ({
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
           <div className="overflow-hidden">
             <table className="min-w-full">
-              <thead className="bg-white border-b">
+              <thead className="bg-stone-500 border-b">
                 <tr>
                   <th
                     scope="col"
-                    className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-sm font-medium text-stone-300 px-6 py-4 text-left"
                   >
                     #
                   </th>
                   <th
                     scope="col"
-                    className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-sm font-medium text-stone-800 px-6 py-4 text-left"
                   >
                     Detail
                   </th>
                   <th
                     scope="col"
-                    className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                    className="text-sm font-medium text-stone-800 px-6 py-4 text-left"
                   >
                     Value
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="humidity"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Humidity
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {humidity}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="feels"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Feels
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {feels}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="pressure"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Pressure
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {pressure}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="windSpeed"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Wind
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {windSpeed}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="visibility"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Visibility
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {visibility}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="longitude"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Longitude
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {longitude}
                   </td>
                 </tr>
-                <tr className="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"></td>
+                <tr className="bg-stone-700 border-b transition duration-300 ease-in-out hover:bg-stone-800">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-stone-400"></td>
 
                   <td
                     id="latitude"
-                    className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
+                    className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap"
                   >
                     Latitude
                   </td>
-                  <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  <td className="text-sm text-stone-400 font-light px-6 py-4 whitespace-nowrap">
                     {latitude}
                   </td>
                 </tr>
