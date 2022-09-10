@@ -7,4 +7,5 @@ html {
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }

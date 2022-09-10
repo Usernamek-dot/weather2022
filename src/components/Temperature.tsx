@@ -11,10 +11,7 @@ export const Temperature = ({
         <img id="idImgTemperature" src={icon} />
       </section>
       <section>
-        <div
-          id="IdTemperature"
-          className="py-3 px-6 border-t border-gray-700 text-gray-600"
-        >
+        <div id="IdTemperature">
           {temperature} <span>°C</span>
         </div>
       </section>

@@ -44,17 +44,22 @@ export const WeatherContainer = ({
   }, [fetchedData]);
 
   return (
-    <div className="flex justify-center p-3">
-      <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-stone-500 shadow-lg">
+    <div className="flex justify-center">
+      <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
         <img
           className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
           src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
           alt=""
         />
         <div className="p-6 flex flex-col justify-start">
-          <Location data={weather} />
+          <h5 className="text-gray-900 text-xl font-medium mb-2">
+            <Location data={weather} />
+          </h5>
           <Table data={weather} />
-          <Temperature data={weather} />
+
+          <p className="text-gray-600 text-xs">
+            <Temperature data={weather} />
+          </p>
         </div>
       </div>
     </div>
