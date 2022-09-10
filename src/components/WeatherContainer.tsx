@@ -52,9 +52,9 @@ export const WeatherContainer = ({
           alt=""
         />
         <div className="p-6 flex flex-col justify-start">
-          <Location />
-          <Table />
-          <Temperature />
+          <Location data={weather} />
+          <Table data={weather} />
+          <Temperature data={weather} />
         </div>
       </div>
     </div>

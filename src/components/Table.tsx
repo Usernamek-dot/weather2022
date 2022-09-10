@@ -1,24 +1,55 @@
-export const Table = () => {
+import { WeatherData } from "../models/WeatherData";
+
+export const Table = ({
+  data: {
+    humidity,
+    feels,
+    pressure,
+    windSpeed,
+    visibility,
+    longitude,
+    latitude,
+  },
+}: {
+  data: WeatherData;
+}) => {
   return (
     <table className="table-auto">
       <thead>
         <tr>
-          <th>Song</th>
-          <th>Year</th>
+          <th>Detail</th>
+          <th>Value</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-          <td>1961</td>
+          <td>Humidity</td>
+          <td id="humidity">{humidity}</td>
         </tr>
         <tr>
-          <td>Witchy Woman</td>
-          <td>1972</td>
+          <td>Feels</td>
+          <td id="feels">{feels}</td>
+        </tr>
+
+        <tr>
+          <td>Pressure</td>
+          <td id="pressure">{pressure}</td>
         </tr>
         <tr>
-          <td>Shining Star</td>
-          <td>1975</td>
+          <td>Wind</td>
+          <td id="windSpeed"> {windSpeed}</td>
+        </tr>
+        <tr>
+          <td>Visibility</td>
+          <td id="visibility"> {visibility}</td>
+        </tr>
+        <tr>
+          <td>Longitude</td>
+          <td id="longitude">{longitude}</td>
+        </tr>
+        <tr>
+          <td>Latitude</td>
+          <td id="latitude">{latitude}</td>
         </tr>
       </tbody>
     </table>
