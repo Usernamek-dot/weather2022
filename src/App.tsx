@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getWeatherCoordinates } from "./api/fetchWeather";
+import { Sidebar } from "./components/Sidebar";
 import { WeatherContainer } from "./components/WeatherContainer";
 
 export const App = () => {
@@ -20,10 +21,19 @@ export const App = () => {
 
   return (
     <>
-      <h1 className="text-center font-medium leading-tight text-5xl mt-0 mb-5 text-stone-600">
-        Weather App 💛
-      </h1>
-      <WeatherContainer fetchedData={fetchedData} error={error} />
+      <div className="flex justify-between">
+        <aside className="h-screen sticky top-0">
+          <Sidebar />
+        </aside>
+        <main>
+          <WeatherContainer fetchedData={fetchedData} error={error} />
+        </main>
+      </div>
     </>
   );
 };
+
+{
+  /* <Sidebar />
+<WeatherContainer fetchedData={fetchedData} error={error} /> */
+}
