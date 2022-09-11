@@ -1,32 +1,11 @@
-import { Dispatch, FormEvent, SetStateAction } from "react";
-import { getWeatherSearch } from "../api/fetchWeather";
+import { FormEvent } from "react";
 import { Search } from "./Search";
 
 export const Sidebar = ({
-  setError,
-  setFetchedData,
+  handleSearch,
 }: {
-  setError: Dispatch<SetStateAction<string>>;
-  setFetchedData: Dispatch<SetStateAction<null>>;
+  handleSearch: (e: FormEvent<HTMLFormElement>, CITY: string) => void;
 }) => {
-  const handleSearch = async (e: FormEvent<HTMLFormElement>, CITY: string) => {
-    e.preventDefault();
-    setError("");
-    try {
-      const data = await getWeatherSearch(CITY);
-
-      if (data === "404") {
-        setError("Not found");
-      } else if (data === "400") {
-        setError("Type a city");
-      } else {
-        setFetchedData(data);
-        console.log(data);
-      }
-    } catch (error) {
-      setError("Something went wrong");
-    }
-  };
   return (
     <div
       className="

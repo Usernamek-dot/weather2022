@@ -32,13 +32,13 @@ export const WeatherContainer = ({
         country: fetchedData.sys.country,
         temperature: Math.floor(fetchedData.main.temp - 273),
         description: fetchedData.weather[0].description,
-        icon: ``,
+        icon: `http://openweathermap.org/img/wn/${fetchedData.weather[0].icon}.png`,
         humidity: fetchedData.main.humidity + "%",
         feels: Math.floor(fetchedData.main.feels_like - 273) + "°C",
         visibility: fetchedData.visibility + "m",
         pressure: fetchedData.main.pressure + "hPa",
         longitude: fetchedData.coord.lon,
-        latitude: fetchedData.wind.speed + "m/s",
+        latitude: fetchedData.coord.lat,
         windSpeed: fetchedData.wind.speed + "m/s",
       });
   }, [fetchedData]);

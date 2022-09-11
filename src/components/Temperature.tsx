@@ -7,18 +7,14 @@ export const Temperature = ({
 }) => {
   return (
     <>
-      <section>
-        <img id="idImgTemperature" src={icon} />
-      </section>
-      <section>
+      <section className="flex flex-row m-4">
+        <img id="iconImg" src={icon} />
         <div id="IdTemperature">
           <p id="idDescription" className="text-stone-300 text-base mb-4">
             {temperature} <span>°C</span>
           </p>
         </div>
-      </section>
-      <section>
-        <p id="idDescription" className="text-stone-300 text-base mb-4">
+        <p id="idDescription" className="ml-3 text-stone-300 text-base mb-4">
           {description}
         </p>
       </section>
