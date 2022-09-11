@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import { getWeatherCoordinates } from "./api/fetchWeather";
 import { Sidebar } from "./components/Sidebar";
 import { WeatherContainer } from "./components/WeatherContainer";
-
 export const App = () => {
-  const [fetchedData, setFetchecData] = useState(null);
+  const [fetchedData, setFetchedData] = useState(null);
   const [error, setError] = useState("");
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (position) => {
@@ -12,7 +11,7 @@ export const App = () => {
       const LON = position.coords.latitude;
       try {
         const data = await getWeatherCoordinates(LAT, LON);
-        setFetchecData(data);
+        setFetchedData(data);
       } catch (err) {
         setError("error message");
       }
@@ -23,7 +22,7 @@ export const App = () => {
     <>
       <div className="flex justify-between">
         <aside className="h-screen sticky top-0">
-          <Sidebar />
+          <Sidebar setFetchedData={setFetchedData} setError={setError} />
         </aside>
         <main>
           <WeatherContainer fetchedData={fetchedData} error={error} />
