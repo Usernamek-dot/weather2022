@@ -1,4 +1,4 @@
-const API_KEY = "6abebd445cc88587cabf839713293452";
+const API_KEY = "4735a3d53eb8b62853d0bf1b61da29cf";
 
 export const getWeatherCoordinates = async (
   LAT: number,
