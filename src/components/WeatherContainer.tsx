@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Location } from "./Location";
 import { Table } from "./Table";
 import { Temperature } from "./Temperature";
+import sideImg from "../assets/sideImg.jpg";
 
 export const WeatherContainer = ({
   fetchedData,
@@ -48,8 +49,8 @@ export const WeatherContainer = ({
       {error === "" ? (
         <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-stone-600 shadow-lg">
           <img
+            src={sideImg}
             className=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
-            src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg"
             alt="Weather image"
           />
           <div className="p-6 flex flex-col justify-start">
